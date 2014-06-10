@@ -1,7 +1,4 @@
 import com.typesafe.sbt.SbtScalariform._
-import sbtassembly.Plugin._
-import sbtassembly.Plugin.AssemblyKeys._
-import scala.Some
 import scalariform.formatter.preferences._
 import sbtrelease.ReleasePlugin._
 import sbtrelease.ReleasePlugin.ReleaseKeys._
@@ -77,9 +74,3 @@ releaseProcess := Seq[ReleaseStep](
 )
 
 incOptions := incOptions.value.withNameHashing(nameHashing = true)
-
-assemblySettings
-
-jarName in assembly := { s"${name.value}_v${version.value}.jar" }
-
-mainClass in assembly := Some("com.TAJ.SuperCSVFile.Main")
