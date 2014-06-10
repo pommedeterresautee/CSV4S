@@ -32,7 +32,7 @@ import org.scalatest.Suites
 /**
  * These tests are related to the count of columns in a text file.
  */
-class MainTest extends Suites(ParserTest, ParserIteratorTest) with TestTrait {
+class MainCSVTest extends Suites(ParserTest, ParserIteratorTest) with TestTrait {
 
   ParserTest.test()
 

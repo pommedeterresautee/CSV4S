@@ -47,7 +47,7 @@ case class ParserIterator(DelimiterChar: Char = ',', QuoteChar: Char = '"', Esca
 
   private var state: ParserState = ParserState.createInitialState(System.getProperty("line.separator"), OpenCSV(DelimiterChar, QuoteChar, EscapeChar, IgnoreCharOutsideQuotes, IgnoreLeadingWhiteSpace), BackParseLimit)
 
-  override def hasNext: Boolean = IteratorOfLines.hasNext || !state.stack.isEmpty
+  override def hasNext: Boolean = IteratorOfLines.hasNext || state.stack.nonEmpty
 
   override def next(): ParserResult = {
     val (newParserState, validation) = CSVLineParser.parseBlockOfLines(state, () ⇒ IteratorOfLines.next(), () ⇒ hasNext)
