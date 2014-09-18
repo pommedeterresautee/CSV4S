@@ -7,9 +7,9 @@ import ReleaseStateTransformations._
 
 name := "CSV4S"
 
-version := "1.0.0"
+version := "1.0.1"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.2"
 
 resolvers ++= Seq(
   "Typesafe repository releases" at "http://repo.typesafe.com/typesafe/releases/"
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-simple" % "1.7.7",
   "com.chuusai" %% "shapeless" % "2.0.0",
   "com.typesafe.play" %% "play-iteratees" % "2.3.0",
-  "org.scalatest" %% "scalatest" % "2.2.0" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.2" % "test"
 )
 
 scalacOptions ++= Seq(
