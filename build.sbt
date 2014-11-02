@@ -9,7 +9,7 @@ name := "CSV4S"
 
 version := "1.0.2"
 
-scalaVersion := "2.11.3"
+scalaVersion := "2.11.4"
 
 resolvers ++= Seq(
   "Typesafe repository releases" at "http://repo.typesafe.com/typesafe/releases/"
