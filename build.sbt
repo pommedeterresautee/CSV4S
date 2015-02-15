@@ -17,10 +17,10 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2",
-  "org.slf4j" % "slf4j-simple" % "1.7.7",
+  "org.slf4j" % "slf4j-simple" % "1.7.10",
   "com.chuusai" %% "shapeless" % "2.0.0",
   "com.typesafe.play" %% "play-iteratees" % "2.3.0",
-  "org.scalatest" %% "scalatest" % "2.2.2" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
 )
 
 scalacOptions ++= Seq(
