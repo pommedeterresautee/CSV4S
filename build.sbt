@@ -7,9 +7,9 @@ import ReleaseStateTransformations._
 
 name := "CSV4S"
 
-version := "1.0.2"
+version := "1.0.3"
 
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.5"
 
 resolvers ++= Seq(
   "Typesafe repository releases" at "http://repo.typesafe.com/typesafe/releases/"
